@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* ------------- СЛАЙДЕР ------------------ */
+.slider-wrapper {
+  max-width: 375px;
+  margin: 0 auto; }
+
+.slider-container {
+  margin: 0 auto;
+  margin-top: 20px;
+  overflow: hidden; }
+
+@media screen and (min-width: 500px) {
+  .slider-container {
+    width: 400px; } }
+
+.slider-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  margin: 0 0 0 20px; }
+
+@media screen and (min-width: 500px) {
+  .slider-track {
+    margin: 0 20px 0 0; } }
+
+.slider-item {
+  height: 260px;
+  width: 300px;
+  padding: 0 12px 0 0px; }
+
+@media screen and (min-width: 500px) {
+  .slider-item {
+    padding: 0 12px 0 0px; } }
+
+.slider-content {
+  width: 300px;
+  height: 260px;
+  border: 2px solid #482712;
+  border-radius: 20px;
+  padding: 32px; }
+
+@media screen and (min-width: 500px) {
+  .slider-content {
+    width: 340px; } }
+
+.slider-buttons {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 160px;
+  height: 32px;
+  margin-left: 90px; }
+
+.slider-buttons button {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 20px;
+  border: #482712 1px solid;
+  background: #fff; }
+
+.slider-buttons .btn-prev {
+  position: relative; }
+
+.slider-buttons .btn-prev::after {
+  position: absolute;
+  content: '';
+  background: url("/GoodBoys/img/Main/slider/btn-prev_arrow.svg");
+  height: 20px;
+  width: 12px;
+  left: 8px;
+  top: 5px; }
+
+.slider-buttons .btn-next {
+  position: relative; }
+
+.slider-buttons .btn-next::after {
+  position: absolute;
+  content: '';
+  background: url("/GoodBoys/img/Main/slider/btn-next_arrow.svg");
+  height: 20px;
+  width: 12px;
+  left: 10px;
+  top: 5px; }
+
+/*--------------------SLIDER-CONTENT--------------------------*/
+/* ------------------------ОБЩИЕ-----------------------------*/
+.description .title {
+  font-weight: 700;
+  font-size: 18px; }
+
+.description button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px; }
+
+.description .text {
+  width: 240px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #4E5155; }
+
+@media screen and (min-width: 500px) {
+  .description .text {
+    width: 270px; } }
+
+.description {
+  position: relative; }
+
+.description::after {
+  position: absolute;
+  content: '';
+  /* background: url(../img/main/feedback/slider/trustpilot.svg); */
+  width: 84px;
+  height: 22px;
+  left: 0;
+  bottom: -41px; }

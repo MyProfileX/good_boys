@@ -1,0 +1,149 @@
+body{
+   font-family: 'Jost';
+}
+
+@font-face {
+   font-family: 'Jost';
+   src: url(/GoodBoys/fonts/Jost-Regular.ttf);
+}
+
+.wrapper{
+      min-height: 100%;
+      overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+
+
+._container{
+   max-width: 375px;
+   margin: 0px auto;
+}
+@media screen and (min-width: 376px){
+   ._container{
+      max-width: 768px;
+      margin: 0px auto;
+   }
+
+   .navbar .nav-menu {
+      max-width: 300px;
+      margin: 0 10px 0 0;
+      .nav-link{
+         font-size: 12px;
+      }
+   }
+}
+
+
+/* --------------------- HEADER ------------------------------ */
+// .header {
+
+// }
+
+nav {
+   height: 50px;
+   width: 100%;
+   display: flex;
+   // flex-wrap: wrap;
+   justify-content: space-between;
+   margin: 0;
+   text-align: center;
+   align-items: center;
+}
+.logo {
+   margin-left: 10px;
+}
+
+ .navbar {
+   text-align: center;
+   align-items: center;
+   transition: all 0.5s;
+ }
+
+ 
+.nav-menu {
+   display: flex;
+   max-width: 400px;
+   justify-content: space-between;
+ }
+@media screen and (max-width: 375px){
+   .nav-menu {
+   width: 100%;
+   height: 100%;
+   display: block;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 30px;
+   position: fixed;
+   top: 0px; 
+   background: #fff;
+   // opacity: 0.7;
+   right: -100%;
+   transition: 0.5s;
+   margin: 0 auto;
+   }
+}
+@media screen and (min-width: 376px){
+   .nav-menu {
+   // display: block;
+   display: flex;
+   justify-content: space-between;
+   width: 400px;
+   gap: 10px;
+      .close{
+         visibility: hidden;
+      }
+   } 
+}
+@media screen and (min-width: 500px){
+   .navbar .nav-menu {
+      min-width: 350px;
+      margin: 0 10px 0 0;
+   }
+}
+
+.nav-menu{
+   a.nav-link {
+      text-decoration: none;
+      font-size: 20px;
+      transition: 0.5s;
+      color: #482712;
+   }
+
+   img{
+      position: absolute;
+      right: 10px;
+      top: 14px;
+   }
+}
+ 
+.hamburger{ // ИДЕМ ОТ МОБИЛКИ
+
+   position: fixed;
+   right: 0px;
+   top: 12px;
+
+   display: block;
+   cursor: pointer;
+   .open{
+      position: relative;
+      margin: 0 10px 0 0;
+ }
+}
+@media (min-width: 376px) {
+   .hamburger {
+     display: none;
+   }
+}
+
+.active {
+   top: 0px;
+   right: 0;
+   transition: 0.2s ease;
+   .open{ // кнопка открытия
+      opacity: 0; 
+      margin-top: 14px;
+   }
+
+}

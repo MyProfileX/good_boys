@@ -1,0 +1,284 @@
+// =========================== ОБЩИЕ
+
+.title {
+   font-weight: 700;
+   font-size: 24px;  
+   color: #482712;
+   margin-bottom: 20px;
+  }
+  
+  p{
+     font-size: 16px;
+     line-height: 23px;
+     letter-spacing: 0.02em;
+  }
+  
+  button{
+     width: 200px;
+     height: 50px;
+  
+     background: #482712;
+     border-radius: 35px;
+  
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 23px;
+  
+     color: #FFFFFF;
+  }
+  
+  // задавать данный класс каждому блоку, помимо его прямого названия
+  .section{
+     margin-top: 40px;
+  }
+
+.main__container {
+   width: 340px;
+   margin: 0px auto;
+}
+@media screen and (min-width: 768px) {
+
+   .main__container{
+      width: 728px;
+   }
+}
+
+.main-title{
+   font-weight: 700;
+   font-size: 34px;  
+   color: #482712;
+   margin-bottom: 20px;
+}
+
+
+// =========================================== about-us
+
+.about-us {
+   .content{
+      display: flex;
+      justify-content: space-between;
+   }
+   .right{
+      display: none;
+   }
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+   .about-us{
+
+      .left{
+         width: 440px;
+      }
+      .right{
+         display: block;
+         width: 440px;
+         text-align: center;
+      }
+   }
+}
+
+
+
+
+// =========================================== activities
+
+.activities {
+   .content{
+      display: flex;
+      flex-direction: column;
+      
+   }
+   .left{
+      order: 2;
+      img{
+         display: block;
+         margin: 0 auto;
+      }
+   }
+   .right{
+      order: 1;
+      margin-bottom: 30px;
+   }
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+   .activities{
+
+      .content{
+         flex-direction: row;
+      }
+
+      .left{
+         width: 440px;
+         order: 1;
+      }
+
+      .right{
+         width: 440px;
+         order: 2;
+      }
+   }
+}
+
+// =========================================== ACHIEVES
+
+
+
+.section {
+}
+.content {
+}
+
+
+.achieves {
+   .left {
+      height: 400px;
+      width: 335px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+   }
+   .right {
+      display: none;
+   }
+   .achieve {
+      display: flex;
+      justify-content: space-between;
+      width: 335px;
+      height: 90px;
+      border: #482712 2px solid;
+      border-radius: 14px;
+      color: #482712;
+      padding: 12px 17px;
+   }
+
+   
+   .achieve-icon{
+      img{
+         display: block;
+         margin: 0 auto;
+      }
+      height: 60px;
+      width: 60px;
+      display: flex;
+      align-items: center;
+      margin: 0 16px 0 0;
+   }
+
+   .achieve-text {
+      width: 240px;
+   }
+   
+   .achieve-title {
+      font-weight: 900;
+      font-size: 18px;
+   }
+
+   
+   .achieve-discription {
+      font-size: 12px;
+      line-height: 20px;
+   }
+   
+}
+
+@media screen and (min-width: 768px) {
+   .achieves{
+      .title{
+         display: none;
+      }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .right {
+         display: block;
+      }
+   }
+   
+}
+
+
+
+
+// =========================================== CONTACTS
+.contacts{
+   .title{
+      text-align: center;
+   }
+   button{
+      margin: 0 auto;
+   }
+}
+
+.form{
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   max-width: 300px;
+}
+
+.input {
+   border-bottom: 1px solid #482712;
+}
+
+.label {   
+   display: flex;
+   justify-content: space-between;
+}
+
+.checkbox {
+   display: none;
+}
+
+.fake {
+   display: block;
+   width: 20px;
+   height: 20px;
+   border: 2px solid #482712;
+   border-radius: 5px;
+   position: relative;
+
+}
+
+.fake::before{
+   content: "";
+   position: absolute;
+   left: 3px;
+   top: 3px;
+   display: block;
+   width: 10px;
+   height: 10px;
+   background: url(/GoodBoys/img/Main/checked.svg);
+   opacity: 0;
+   transition: .2s;
+   
+}
+
+.checkbox:checked + .fake::before {
+   opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+.agreement {
+   display: block;
+   font-size: 12px;
+   line-height: 16px;
+   width: 200px;
+   margin-right: 70px;
+}
